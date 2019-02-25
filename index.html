@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My HTML Page</title>
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Modal -->
+
+<div class="modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title"></h5>
+        </div>
+        <div class="modal-body">
+            <p></p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success Game-btn" id="new-game">Start New Game</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <!-- Game -->
+
+  <section id="root" class="Game">
+      <div class="Game-container container">
+            <div class="Game-row row">
+                  <div class="Game-col col-xs-12">
+                        <!-- Banner -->
+                        <div class="Game-banner">
+                              <img class="img-fluid" src="assets/header_banner.png" alt="header_hero"/>
+                        </div>
+                  </div>
+
+                  <!-- Form Player 1 -->
+
+                  <div class="Game-col col-md-4 col-sm-12 text-center">
+                        <form class="Game-form" id="Player1">
+                                <div class="form-group Game-form-group">
+                                      <label class="Game-form-label" for="email">Enter a number between 0 to 10</label>
+                                      <input required type="number" max="10"  class="form-control Game-form-control" id="playerNumber1">
+                                </div>
+                                <button role="status" type="submit" id="player1btn" class="btn btn-success Game-form-btn"><span>Submit</span></button>
+                                <div class="Game-label higher text-center">Your guess must be higher</div>
+                                <div class="Game-label lower text-center">Your guess must be lower</div>
+                                <div class="Game-label bingo text-center">Oh yeah. You use the force well.</div>
+                        </form>
+                  </div>
+
+                  <!-- Form Player 2 -->
+
+                  <div class="Game-col col-md-4 col-sm-12 text-center">
+                        <form class="Game-form" id="Player2">
+                              <div class="form-group Game-form-group">
+                                    <label class="Game-form-label" for="email">Enter a number between 0 to 10</label>
+                                    <input required type="number" max="10"  class="form-control Game-form-control" id="playerNumber2">
+                              </div>
+                              <button role="status" type="submit" id="player2btn" class="btn btn-success Game-form-btn"><span>Submit</span></button>
+                              <div class="Game-label higher text-center">Your guess must be higher</div>
+                              <div class="Game-label lower text-center">Your guess must be lower</div>
+                              <div class="Game-label bingo text-center">Oh yeah. You use the force well.</div>
+                        </form>
+                  </div>
+
+                  <!-- Form Player 3 -->
+
+                  <div class="Game-col col-md-4 col-sm-12 text-center">
+                        <form class="Game-form" id="Player3">
+                              <div class="form-group Game-form-group">
+                                    <label class="Game-form-label" for="email">Enter a number between 0 to 10</label>
+                                    <input required type="number" max="10" class="form-control Game-form-control" id="playerNumber3">
+                              </div>
+                              <button role="status" type="submit" id="player3btn" class="btn btn-success Game-form-btn"><span>Submit</span></button>
+                              <div class="Game-label higher text-center">Your guess must be higher</div>
+                              <div class="Game-label lower text-center">Your guess must be lower</div>
+                              <div class="Game-label bingo text-center">Oh yeah. You use the force well.</div>
+                        </form>
+                  </div>
+
+            <!-- end of forms -->
+            </div>
+      </div>
+      <div class="container">
+            <div class="Game-alert">
+                <p>*Please turn on or increase the volume!</p>
+            </div>
+      </div>
+  </section>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

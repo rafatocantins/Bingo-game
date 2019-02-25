@@ -1,0 +1,111 @@
+/*****************************************************************************************
+game banner
+*****************************************************************************************/
+
+.Game-container{
+      padding: 55px 30px;
+}
+
+/*****************************************************************************************
+game banner
+*****************************************************************************************/
+.Game-banner{
+      height: 170px;
+      overflow:hidden;
+      margin-bottom: 30px;
+}
+
+/*****************************************************************************************
+game col
+*****************************************************************************************/
+.Game-col form{
+      padding: 55px 70px;
+      border: 1px solid lightgray;
+      margin-bottom: 20px;
+      max-height: 310px;
+}
+
+.Game-col .Game-banner{
+  padding-left: 15px;
+  padding-right:15px;
+}
+
+/*****************************************************************************************
+game form
+*****************************************************************************************/
+.Game-form-group input{
+      width: 100px;
+      display: block;
+      margin: 0 auto;
+}
+
+.Game-form-group label{
+      padding-left: 15px;
+      padding-right: 15px;
+}
+
+button.btn{
+      font-weight: 600;
+}
+
+/*****************************************************************************************
+game form label
+*****************************************************************************************/
+.Game-label{
+      padding: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 15px;
+      display: none;
+}
+
+.Game-label.higher{
+      background-color: red;
+      color: white;
+}
+
+.Game-label.lower{
+      background-color: yellow;
+      color: black;
+}
+
+.Game-label.bingo{
+      background-color: limegreen;
+      color: black;
+}
+
+/*****************************************************************************************
+game alert
+*****************************************************************************************/
+
+.Game-alert{
+      padding: 10px 15px;
+      display: inline-block;
+}
+
+.Game-alert p{
+    margin: 0;
+}
+
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 520px) {
+
+  .modal-dialog{
+      top: 35%;
+      transform: translateY(-50%);
+  }
+
+  .Game-container{
+    padding: 30px;
+  }
+
+  .Game-banner{
+        height: 95px;
+  }
+
+}
